@@ -17,10 +17,10 @@ struct ans{
     }
 };
 
-bool compareInterval(lft i1, lft i2) 
-{ 
-    return (i1.nums < i2.nums); 
-} 
+bool compareInterval(lft i1, lft i2)
+{
+    return (i1.nums < i2.nums);
+}
 
 vector <lft> vt;
 
@@ -46,7 +46,7 @@ int main(){
         for(int j=0;j<n;j++){
 
             if(a>=vt[j].st&&a<=vt[j].en){
-                
+
                 if(p.first> abs(vt[j].des-b) ){
                     p.second = vt[j].nums;
                     p.first = abs(vt[j].des-b);
@@ -55,7 +55,7 @@ int main(){
             }
             else {
                 int tmp = abs(vt[j].des-a)+abs(b-a);
-                
+
                 if(p.first>=tmp){
                     p.first = tmp;
                     p.second = vt[j].nums;
@@ -64,7 +64,7 @@ int main(){
             }
 
         }
-        
+
         cout << ">> "<< df.top().numl << "\n";
         //df.clear();
     }
