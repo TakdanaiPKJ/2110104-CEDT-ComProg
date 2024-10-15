@@ -14,8 +14,8 @@ int main(){
     int a;
     cin >> a;
     arr[a] ++;
-    all += a; 
-    mp[a] = i;   
+    all += a;
+    mp[a] = i;
   }
   all -= sum;
   for(int i=1;i<=25001;i++){
